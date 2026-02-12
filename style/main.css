@@ -1,0 +1,109 @@
+@font-face {
+    font-family: outfit;
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: youngserif;
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+:root{
+--main-font:youngserif;
+--secondary-font: outfit;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--secondary-font);
+}
+
+body {
+    min-height: 100vh;
+    background: #F3E5D8;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* Start Recipe Container */
+.recipe-card {
+    background: white;
+    padding: 45px;
+    margin: 30px;
+    border-radius: 20px;
+}
+.recipe-card h2{
+    font-family: var(--main-font);
+    padding: 15px 0;
+    font-size: 30px;
+    font-weight: normal;
+    color:#B91C1C;
+}
+hr{
+    margin-bottom: 15px;
+}
+.recipe-card strong{
+color: #737373;
+font-weight: bolder;
+}
+
+.recipe-card header img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recipe-card .recipe-content h1 {
+    font-family: var(--main-font);
+    font-size: 45px;
+    font-weight: normal;
+    padding: 30px 0 10px 0;
+}
+.recipe-card .recipe-content > p{
+    font-size: 19px;
+    padding: 20px 0;
+    line-height: 30px;
+}
+.prep-time{
+    background: #FFF8FC;
+    padding: 15px 30px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+.prep-time h3{
+    font-size: 20px;
+    color: #334489;
+    padding: 10px 0;
+}
+.prep-time ul {
+    margin-left: 25px;
+}
+.prep-time ul li strong{
+    margin-left: 15px;
+    line-height: 30px;
+}
+.ingredients ul ,.instructions ol{
+    margin: 0 0 20px 25px;
+    line-height: 30px;
+}
+.ingredients ul li ,.instructions ol li {
+    padding-left: 15px;
+}
+.nutrition >p{
+    padding-bottom:15px ;
+}
+.nutrition .nutrition-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.nutrition .nutrition-table tr td{
+    border-bottom:1px solid #B3B3B3;
+    padding: 10px 30px;
+}
+.nutrition .nutrition-table tr:last-child td{
+    border-bottom:none;
+}
+
+/* End Recipe Container */
